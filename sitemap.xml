@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>https://SosUts.github.io/program/python/pyplot/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://SosUts.github.io/mathematics/linearalgebra/matrix/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://SosUts.github.io/mathematics/linearalgebra/eigen/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://SosUts.github.io/program/python/numpy/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://SosUts.github.io/biology/test3/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://SosUts.github.io/404/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://SosUts.github.io/program/julia/plots/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://SosUts.github.io/program/julia/csv/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://SosUts.github.io/mathematics/statistics/normal/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://SosUts.github.io/mathematics/statistics/gaussian/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://SosUts.github.io/index.html</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+</urlset>
