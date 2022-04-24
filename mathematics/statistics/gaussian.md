@@ -1,1 +1,0 @@
-@def title = "Linear Algebras"
