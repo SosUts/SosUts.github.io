@@ -1,3 +1,13 @@
+:root {
+  --background-color: #282c34;
+  --block-background: #282c34;
+  --output-background: #282c34;
+  --small: 15px;
+  --normal: 17px;
+  --code-text-color: #BBBBBB;
+  --text-color: #ABB2BF
+}
+
 /*
 small alterations for Franklin
 */
@@ -1361,7 +1371,7 @@ a.pure-button-selected {
   position: relative;
   z-index: 1;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: var(--background-color);
 }
 
 .slideout-open,
@@ -1441,7 +1451,7 @@ a.pure-button-selected {
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   border-radius: 4px;
-  background-color: #000;
+  background-color: rgb(255, 255, 255);
 }
 
 .hamburger-inner::after,
@@ -2504,6 +2514,8 @@ a.pure-button-selected {
 html {
   font-family: "Helvetica Neue","Segoe UI",Helvetica,"游ゴシック体",YuGothic,"Yu Gothic M","游ゴシック Medium","Yu Gothic Medium","メイリオ",Meiryo,sans-serif;  ;
   line-height: 1.4;
+  background-color: var(--background-color);
+
 }
 
 h1 {
