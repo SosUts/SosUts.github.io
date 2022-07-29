@@ -3,7 +3,7 @@
 .hljs-comment,
 .hljs-quote { color: #998; font-style: italic; }
 
-.hljs-keyword,
+.hljs-keyword { color: #E06C75},
 .hljs-selector-tag,
 .hljs-subst { color: var(--text-color); font-weight: 700; }
 
@@ -11,10 +11,10 @@
 .hljs-number,
 .hljs-tag .hljs-attr,
 .hljs-template-variable,
-.hljs-variable { color: teal; }
+.hljs-variable { color: #C678DD; }
 
 .hljs-doctag,
-.hljs-string { color: #d14; }
+.hljs-string { color: #E5C07B; }
 
 .hljs-section,
 .hljs-selector-id,
