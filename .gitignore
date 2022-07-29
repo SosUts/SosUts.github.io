@@ -3,3 +3,7 @@ __site/
 node_modules/
 package-lock.json
 .vscode
+.repository
+.for_local
+Manifest.toml
+Project.toml
