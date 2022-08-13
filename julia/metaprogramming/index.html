@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+
+  <link href="/css/franklin.css" rel="stylesheet">
+<link href="/css/vela.css" rel="stylesheet">
+<!-- <link href="/css/custom.css" rel="stylesheet"> -->
+<script src="/libs/vela/jquery.min.js"></script>
+
+<link rel="icon" href="/assets/favicon.png">
+
+
+  <title>Welcome to Sosuke's blog'</title>
+</head>
+<body>
+<div class="main-nav slideout-menu slideout-menu-left" id="menu">
+  <div class="flex-container">
+    <span class="sidebar-brand">
+      <h3 style='font-size: 25px'>Menu</h3>
+    </span>
+  </div> <!-- class="flex-container" -->
+
+  <nav class="sidebar-nav">
+    <ul class="metismenu" id="metismenu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="" class="has-arrow">Statistics</a>
+        <ul>
+          <li><a href="/statistics/統計検定2級受験記">統計検定2級受験記</a>
+        </ul>
+      <li><a href="" class=has-arrow>Linear Algebra</a>
+        <ul>
+        </ul>
+      <li><a href="" class="has-arrow">Python</a>
+        <ul>
+        </ul>
+      <li><a href="" class="has-arrow">Julia</a>
+        <ul>
+          <li><a href="/program/julia/metaprogramming">Metaprogramming</a>
+          <li><a href="/program/julia/plots/">Plots</a>
+        </ul>
+      <li>
+        <a href="" class="has-arrow">Biology</a>
+        <ul>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div> <!-- main nav menu -->
+
+<main id="panel" class="slidout-panel slideout-panel-left">
+  <div class="toggle-button hamburger hamburger--spin">
+    <div class="hamburger-box">
+      <div class="hamburger-inner"></div>
+    </div>
+  </div>
+  <h1 class="page title">JuliaConで学ぶメタプログラミング</h1>
+  <hr>
+
+
+
+<!-- Content appended here -->
+<div class="franklin-content"><h1 id="juliaconで学ぶメタプログラミング"><a href="#juliaconで学ぶメタプログラミング" class="header-anchor">JuliaConで学ぶメタプログラミング</a></h1>
+<p><a href="https://youtu.be/2QLhw6LVaq0">Introduction to metaprogramming in Julia</a>でメタプログラミングやマクロについて理解したい！   Steven Johnson&#39;s <a href="https://www.youtube.com/watch?v&#61;mSgXWpvQEHE ">keynote talk</a>もメタプログラミングの理解にとても役立つらしい。  </p>
+<p>動画を見て大事そうな言葉をメモったり、リポジトリ&#40;https://github.com/dpsanders/Metaprogramming<em>JuliaCon</em>2021&#41;に書いてあることを自分の言葉に直していこうとおもう。</p>
+<ul>
+<li><p><a href="#juliaconで学ぶメタプログラミング">JuliaConで学ぶメタプログラミング</a></p>
+<ul>
+<li><p><a href="#メタプログラミングとは">メタプログラミングとは</a></p>
+</li>
+<li><p><a href="#なぜメタプログラミングが必要なのか">なぜメタプログラミングが必要なのか</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="メタプログラミングとは"><a href="#メタプログラミングとは" class="header-anchor">メタプログラミングとは</a></h2>
+<p>他のコードを書くことができるコード。通常のコードはデータを操作するだけ。   メタとはいうのは、上位のみたいなニュアンス。Meta-analysis的な奴。  </p>
+<h2 id="なぜメタプログラミングが必要なのか"><a href="#なぜメタプログラミングが必要なのか" class="header-anchor">なぜメタプログラミングが必要なのか</a></h2>
+<p>メタプログラミングは必ずしも必要ではない。メタプログラミングでできることは、全てメタプログラミング<strong>ではない</strong>方法で実現可能。   ただし、メタプログラミングによって楽になる作業がある。</p>
+<pre><code class="julia hljs"><span class="hljs-keyword">function</span> myshow(y)
+    println(<span class="hljs-string">&quot;The value is <span class="hljs-variable">$y</span>&quot;</span>)
+<span class="hljs-keyword">end</span>
+
+x = <span class="hljs-number">2</span>
+y = x + <span class="hljs-number">1</span>
+myshow(x)</code></pre>
+<p>これだとたしかに変数の値はわかるが、値しかわからない。どの変数がどんな値か知るには、マクロを使うしかない。</p>
+<p>This is some julia code:</p>
+<pre><code class="julia hljs"><span class="hljs-keyword">using</span> LinearAlgebra
+a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-meta">@show</span> dot(a, a)</code></pre>
+<pre><code class="plaintext hljs">dot(a, a) = 14
+</code></pre>
+<p><code>@show</code>のほうが便利なのは一目瞭然。マクロは変数そのものにアクセスできる。</p>
+<pre><code class="julia hljs"><span class="hljs-keyword">using</span> Distributions
+<span class="hljs-keyword">function</span> hfun_m1fill(vname)
+  var = vname[<span class="hljs-number">1</span>]
+  <span class="hljs-keyword">return</span> pagevar(<span class="hljs-string">&quot;index&quot;</span>, var)
+<span class="hljs-keyword">end</span></code></pre>
+<div class="page-foot">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Sosuke. Last modified: August 13, 2022.
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+</div>
+</div><!-- CONTENT ENDS HERE -->
+  </main> <!-- end of id=main -->
+  <script src="/libs/vela/metisMenu.min.js"></script>
+  <script src="/libs/vela/slideout.min.js"></script>
+  
+  
+    
+
+
+  
+</body>
+</html>
