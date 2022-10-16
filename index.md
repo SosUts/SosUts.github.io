@@ -1,6 +1,4 @@
 @def title = "Welcome to Sosuke's blog"
-@def tags = ["syntax", "code"]
-@def has_code = true
 
 Last Modified: {{ fd_mtime }}
 

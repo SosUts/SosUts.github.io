@@ -1,10 +1,13 @@
 <!--
 Add here global page variables to use throughout your website.
 -->
-@def author = "Sosuke"
-@def website_title = "Sosuke's blog"
-@def website_descr = "Sosuke's blog"
-@def website_url   = "https://SosUts.github.io"
++++
+author = "Sosuke Utsunomiya"
+short_author = "Sosuke"
+website_title = "Sosuke@Japan"
+website_url   = "https://SosUts.github.io"
+website_descr = "Personal website of Sosuke Utsunomiya"
++++
 
 # Add here files or directories that should be ignored by Franklin, otherwise
 # these files might be copied and, if markdown, processed by Franklin which
@@ -39,6 +42,7 @@ pages. It can be math commands but does not need to be.
 (useful for images for instance) e.g. :
 \style{width:80%;}{![](path/to/img.png)} -->
 \newcommand{\style}[2]{~~~<div style="!#1;margin-left:auto;margin-right:auto;">~~~!#2~~~</div>~~~}
+\newenvironment{mermaid}{~~~ <div style="text-align:center" class="mermaid">~~~}{~~~</div>~~~}
 
 <!-- define document counter enumerated by utils.jl -->
 
