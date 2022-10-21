@@ -7,6 +7,7 @@ short_author = "Sosuke"
 website_title = "Sosuke@Japan"
 website_url   = "https://SosUts.github.io"
 website_descr = "Personal website of Sosuke Utsunomiya"
+has_mermaid = false
 +++
 
 # Add here files or directories that should be ignored by Franklin, otherwise
