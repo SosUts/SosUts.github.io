@@ -1,0 +1,9 @@
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile .profile-item {
+    border: 1px solid black;
+    width: 100%;
+}

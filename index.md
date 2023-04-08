@@ -1,8 +1,20 @@
-@def title = "Welcome to Sosuke's blog"
+@def title = "SosUts.github.io"
 
-Last Modified: {{ fd_mtime }}
+# Welcome!
 
-\toc
+{{insert profile.html}}
+
+
+# Profile
+
+```julia
+using Statistics
+mean([1,2,3])
+```
+
+Inline: $x=5$ or display:
+
+$$ \mathcal W_\psi[f] = \int_{\mathbb R} f(s)\psi(s)\mathrm{d}s $$
 
 # Summary
 

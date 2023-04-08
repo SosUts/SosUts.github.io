@@ -1,10 +1,11 @@
 <!-- CONTENT ENDS HERE -->
     </div>  <!-- div: content container -->
-    {{ if hasmath }}
+    {{ if has_math }}
         {{ insert foot_katex.html }}
     {{ end }}
-    {{ if hascode }}
+    {{ if has_code }}
         {{ insert foot_highlight.html }}
     {{ end }}
+    <script src="./libs/darkmode/darkmode-switch.js"></script>
   </body>
 </html>

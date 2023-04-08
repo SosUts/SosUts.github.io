@@ -1,4 +1,4 @@
-@def hascode=true
+@def has_code = true
 @def isjulia =true
 
 # JuliaConで学ぶメタプログラミング

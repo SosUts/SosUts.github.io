@@ -5,12 +5,29 @@
       <p class="lead">A two-column theme.</p>
     </div>
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item {{ispage index.html}}active{{end}}" href="/">Home</a>
-      <a class="sidebar-nav-item {{ispage menu1/*}}active{{end}}" href="/menu1/">Code blocks</a>
-      <a class="sidebar-nav-item {{ispage menu2/*}}active{{end}}" href="/menu2/">More goodies</a>
-      <a class="sidebar-nav-item {{ispage menu3/*}}active{{end}}" href="/menu3/">Tags</a>
+      <a class="sidebar-nav-item {{ispage index.html}}active{{end}}" href="/">
+        Home
+      </a>
+      <a class="sidebar-nav-item {{ispage biology/*}}active{{end}}" href="/biology/test3/index.html">
+        biology
+      </a>
+      <a class="sidebar-nav-item {{ispage menu2/*}}active{{end}}" href="/menu2/">
+        More goodies
+      </a>
+      <a class="sidebar-nav-item {{ispage menu3/*}}active{{end}}" href="/menu3/">
+        Tags
+      </a>
+      <br>
+      <input type="checkbox" id="darkSwitch">
+      <label class="darkSwitch" for="darkSwitch">
+        <i class="bx bxs-sun"></i>
+        <i class="bx bx-moon"></i>
+        <span class="ball"></span>
+      </label>
+      <br>
+      <p>Last Modified: {{ fd_mtime }}</p>
+      <p>&copy; {{fill author}}.</p>
     </nav>
-    <p>&copy; {{fill author}}.</p>
   </div>
 </div>
 <div class="content container">
