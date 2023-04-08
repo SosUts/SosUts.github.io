@@ -1,88 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMQ8B73W9J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-EMQ8B73W9J');
-</script>
-
-  
-  
-
-  <link href="/css/franklin.css" rel="stylesheet">
-<link href="/css/vela.css" rel="stylesheet">
-<script src="/libs/vela/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+     <link rel="stylesheet" href="/libs/highlight/styles/tokyo-night-dark.min.css">
+ 
+    <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="/css/poole_hyde.css">
+<link rel="stylesheet" href="/css/darkmode_switch.css">
+<link rel="stylesheet" href="/css/profile.css">
+<!-- style adjustments -->
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
 <link rel="icon" href="/assets/favicon.png">
 
+    <link
+  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+  rel="stylesheet"
+/>
 
-  <title>Welcome to Sosuke's blog'</title>
-</head>
-<body>
-<div class="main-nav slideout-menu slideout-menu-left" id="menu">
-  <div class="flex-container">
-    <span class="sidebar-brand">
-      <h3 style='font-size: 25px'>Menu</h3>
-    </span>
-  </div> <!-- class="flex-container" -->
-
-  <nav class="sidebar-nav">
-    <ul class="metismenu" id="metismenu">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="" class="has-arrow">Statistics</a>
-        <ul>
-          <li><a href="/statistics/統計検定2級受験記">統計検定2級受験記</a>
-        </ul>
-      <li><a href="" class=has-arrow>Linear Algebra</a>
-        <ul>
-        </ul>
-      <li><a href="" class="has-arrow">Python</a>
-        <ul>
-        </ul>
-      <li><a href="" class="has-arrow">Julia</a>
-        <ul>
-          <li><a href="/julia/metaprogramming">Metaprogramming</a>
-          <li><a href="/julia/plots/">Plots</a>
-        </ul>
-      <li>
-        <a href="" class="has-arrow">Biology</a>
-        <ul>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</div> <!-- main nav menu -->
-
-<main id="panel" class="slidout-panel slideout-panel-left">
-  <div class="toggle-button hamburger hamburger--spin">
-    <div class="hamburger-box">
-      <div class="hamburger-inner"></div>
+     <title>Plots.jl</title> 
+  </head>
+  <body>
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1><a href="/">Hyde</a></h1>
+      <p class="lead">A two-column theme.</p>
     </div>
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item " href="/">
+        Home
+      </a>
+      <a class="sidebar-nav-item " href="/biology/test3/index.html">
+        biology
+      </a>
+      <a class="sidebar-nav-item " href="/menu2/">
+        More goodies
+      </a>
+      <a class="sidebar-nav-item " href="/menu3/">
+        Tags
+      </a>
+      <br>
+      <input type="checkbox" id="darkSwitch">
+      <label class="darkSwitch" for="darkSwitch">
+        <i class="bx bxs-sun"></i>
+        <i class="bx bx-moon"></i>
+        <span class="ball"></span>
+      </label>
+      <br>
+      <p>Last Modified: April 08, 2023</p>
+      <p>&copy; Sosuke Utsunomiya.</p>
+    </nav>
   </div>
-  <h1 class="page title">Plots.jl</h1>
-  <hr>
+</div>
+<div class="content container">
 
-
-
-<!-- Content appended here -->
+        <!-- Content appended here -->
+  </body>
+</html>
 <div class="franklin-content"><h1 id="plotsjl"><a href="#plotsjl" class="header-anchor">Plots.jl</a></h1>
 <div class="page-foot">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Sosuke Utsunomiya. Last modified: October 21, 2022.
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Sosuke Utsunomiya. Last modified: April 08, 2023.
     Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div><!-- CONTENT ENDS HERE -->
-  </main> <!-- end of id=main -->
-  <script src="/libs/vela/metisMenu.min.js"></script>
-  <script src="/libs/vela/slideout.min.js"></script>
-  
-  
-  
-</body>
+    </div>  <!-- div: content container -->
+    
+    
+        <script src="/libs/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();hljs.configure({tabReplace: '    '});</script>
+
+    
+    <script src="./libs/darkmode/darkmode-switch.js"></script>
+  </body>
 </html>

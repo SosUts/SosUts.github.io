@@ -3,23 +3,25 @@
 ================================================================== */
 
 :root {
-  --background-color: #282c34;
-  --block-background: #282c34;
-  --output-background: #282c34;
-  --small: 15px;
-  --normal: 17px;
-  --code-text-color: #BBBBBB;
-  --text-color: #ABB2BF
+  --block-background: hsl(0, 0%, 94%);
+  --output-background: hsl(0, 0%, 98%);
+  --small: 14px;
+  --normal: 19px;
+  --text-color: #222222;
+  --code-bg: #282c34;
+  --code-font-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ==================================================================
     DEFAULT FONT AND LAYOUT
 ================================================================== */
+
 html {
-  font-family: monospace;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: var(--normal);
   color: var(--text-color);
 }
+
 
 /* ==================================================================
     BASIC GRID FOR PROFILE PIC
@@ -62,14 +64,13 @@ html {
 
 .page-foot {
   font-size: 80%;
-  font-family: "Helvetica Neue";
+  font-family: Arial, serif;
   color: #a6a2a0;
   text-align: center;
   margin-top: 6em;
   border-top: 1px solid lightgrey;
   padding-top: 2em;
   margin-bottom: 4em;
-  background-color: var(--background-color);
 }
 
 /* ==================================================================
@@ -82,7 +83,6 @@ html {
 }
 
 .franklin-content {
-  background-color: #282c34;
   position: relative;
   padding-left: 12.5%;
   padding-right: 12.5%;
@@ -90,7 +90,7 @@ html {
 }
 
 /* On wide screens, fix content width to a max value. */
-@media (min-width: 940px) {
+@media (width >= 940px) {
   .franklin-content {
     width: 705px;
     margin-left: auto;
@@ -111,13 +111,16 @@ html {
 ================================================================== */
 
 .franklin-content h1 {
-  font-size: 30px;
+  font-size: 24px;
 }
-.franklin-content h2 { font-size: 22px; }
-.franklin-content h3 { font-size: 20px; }
+.franklin-content h2 {
+  font-size: 22px;
+}
+.franklin-content h3 {
+  font-size: 20px;
+}
 
-.franklin-content
-h1,
+.franklin-content h1,
 h2,
 h3,
 h4,
@@ -140,18 +143,42 @@ h6 {
   margin-bottom: 1em;
 }
 
-.franklin-content h1 a { color: inherit; }
-.franklin-content h1 a:hover { text-decoration: none; }
-.franklin-content h2 a { color: inherit; }
-.franklin-content h2 a:hover { text-decoration: none; }
-.franklin-content h3 a { color: inherit; }
-.franklin-content h3 a:hover { text-decoration: none; }
-.franklin-content h4 a { color: inherit; }
-.franklin-content h4 a:hover { text-decoration: none; }
-.franklin-content h5 a { color: inherit; }
-.franklin-content h5 a:hover { text-decoration: none; }
-.franklin-content h6 a { color: inherit; }
-.franklin-content h6 a:hover { text-decoration: none; }
+.franklin-content h1 a {
+  color: inherit;
+}
+.franklin-content h1 a:hover {
+  text-decoration: none;
+}
+.franklin-content h2 a {
+  color: inherit;
+}
+.franklin-content h2 a:hover {
+  text-decoration: none;
+}
+.franklin-content h3 a {
+  color: inherit;
+}
+.franklin-content h3 a:hover {
+  text-decoration: none;
+}
+.franklin-content h4 a {
+  color: inherit;
+}
+.franklin-content h4 a:hover {
+  text-decoration: none;
+}
+.franklin-content h5 a {
+  color: inherit;
+}
+.franklin-content h5 a:hover {
+  text-decoration: none;
+}
+.franklin-content h6 a {
+  color: inherit;
+}
+.franklin-content h6 a:hover {
+  text-decoration: none;
+}
 
 .franklin-content table {
   margin-left: auto;
@@ -193,7 +220,7 @@ td {
 }
 
 .franklin-content a {
-  color: 	#61AFEF;
+  color: #368cc5;
   text-decoration: none;
 }
 
@@ -205,8 +232,12 @@ td {
     HYPERREFS AND FOOTNOTES
 ================================================================== */
 
-.franklin-content .eqref a { color: green; }
-.franklin-content .bibref a { color: green; }
+.franklin-content .eqref a {
+  color: green;
+}
+.franklin-content .bibref a {
+  color: green;
+}
 
 .franklin-content sup {
   font-size: 70%;
@@ -252,19 +283,24 @@ td {
   padding-left: 10%;
 }
 
-.franklin-content .img-small img {
-  width: 50%;
-  text-align: center;
-  padding-left: 20%;
+.franklin-content img {
+  width: 25%;
+  text-align: left;
+  padding-left: 0%;
+  border-radius: 100%;
 }
 
 /* ==================================================================
     KATEX
 ================================================================== */
 
-body { counter-reset: eqnum; }
+body {
+  counter-reset: eqnum;
+}
 
-.katex { font-size: 1em !important; }
+.katex {
+  font-size: 1em !important;
+}
 
 .katex-display .katex {
   /* Overwrite KaTeX settings. */
@@ -292,47 +328,45 @@ body { counter-reset: eqnum; }
 ================================================================== */
 
 code {
-  font-family: "Source Han Code JP", monospace;
   background-color: var(--block-background);
   padding: 0.1em 0.2em;
-  border-radius: 1px;
-  font-size: var(--small);
+  border-radius: 2px;
+  font-size: var(--normal);
+  margin-bottom: 1rem;
 }
 
-.franklin-content code {
-  padding: 0.2em 0.2em;
-  border-radius: 8px;
-  font-size: 85%;
-  color: var(--code-text-color);
-}
+/* .franklin-content code { */
 
-.franklin-content.code inline {
-  border-style: solid;
-  border-color: #BBBBBB;
-}
+/* background-color: rgba(27,31,35,0.05); */
+
+/* padding: 0.1em 0.2em; */
+
+/* border-radius: 2px; */
+
+/* font-size: 90%; } */
 
 .hljs {
-    font-size: 80%;
-    line-height: 1.35em;
-    border-radius: 10px;
-    padding: 1em;
-    padding-left:1.2em;
-  }
+  color: var(--code-font-color);
+  background-color: var(--code-bg);
+  font-size: var(--small);
+  line-height: 1.35em;
+  border-radius: 10px;
+}
 
-.hljs-meta,
-.hljs-metas,
-.hljs-metap { font-weight: bold; }
+.hljs-meta {
+  font-weight: bold;
+}
 
-.hljs-meta { color: #98C379; }
-
-.hljs-metas { color: red; }
-
-.hljs-metap { color: rgb(51, 131, 231); }
+.hljs-meta.shell_ {
+  color: crimson;
+}
+.hljs-meta.prompt_ {
+  color: rgb(25, 179, 51);
+}
 
 .code-output {
-  font-family: "Source Han Code JP", monospace;
   background: var(--output-background);
-  border: #dbdbdb;
+  border: 1px dashed #dbdbdb;
 }
 
 /* ==================================================================
@@ -340,7 +374,7 @@ code {
 ================================================================== */
 
 .franklin-content .colbox-blue {
-  background-color: #6cc8ec;
+  background-color: #eef3f5;
   padding-top: 5px;
   padding-right: 10px;
   padding-left: 10px;
